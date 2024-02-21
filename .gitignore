@@ -36,3 +36,5 @@ build/
 *.svn
 *.svn-base
 .svn/*
+*.css
+*.js
