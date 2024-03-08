@@ -277,4 +277,5 @@ SELECT ENAME, SAL
 
 **참고**
 윈도우 함수별 기능 및 예제 - [http://www.gurubee.net/lecture/2382](http://www.gurubee.net/lecture/2382)
+
 윈도우 함수 공식 문서 - [https://www.postgresql.org/docs/current/tutorial-window.html](https://www.postgresql.org/docs/current/tutorial-window.html)
