@@ -1,4 +1,5 @@
-<p align="center"><img src="./img/brin.png"/></p>
+<p align="center"><img src="./img/brin.jpeg"/></p>
+
 ## **1\. BRIN 인덱스란?**
 
 > ▪ Block range index의 약자  
