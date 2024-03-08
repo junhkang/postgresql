@@ -23,7 +23,7 @@
 
 [\[PostgreSQL\] B-tree 인덱스의 원리 및 특징](https://github.com/junhkang/postgresql/blob/main/B-tree%20%EC%9D%B8%EB%8D%B1%EC%8A%A4%EC%9D%98%20%EC%9B%90%EB%A6%AC%20%EB%B0%8F%20%ED%8A%B9%EC%A7%95.md)
 
- ###           1-1. 테이블 생성 시 PK 부여
+###           1-1. 테이블 생성 시 PK 부여
 
 ```
 -- 단일 설정
