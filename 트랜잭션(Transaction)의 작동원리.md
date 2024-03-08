@@ -2,7 +2,7 @@
 
 트랜잭션의 기본 개념과 사용 방법은 다음 포스트에서 확인이 가능하다.
 
-[[PostgreSQL\] 트랜잭션(Transaction)의 개념 및 사용](https://github.com/junhkang/postgresql/blob/main/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98(Transaction)%EC%9D%98%20%EA%B0%9C%EB%85%90%20%EB%B0%8F%20%EC%82%AC%EC%9A%A9.md)
+[[PostgreSQL] 트랜잭션(Transaction)의 개념 및 사용](https://github.com/junhkang/postgresql/blob/main/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98(Transaction)%EC%9D%98%20%EA%B0%9C%EB%85%90%20%EB%B0%8F%20%EC%82%AC%EC%9A%A9.md)
 
 
 기본적으로 트랜잭션이 어떤 것인지, COMMIT, ROLLBACK도 익숙하게 사용하고 있다면, PostgreSQL 내부의 트랜잭션이 어떤 구조로 작동하며 세부 단계를 어떻게 확인 가능한지 자세히 알아보자.
@@ -62,8 +62,8 @@ Row-level의 read/write locks는 잠긴 row에 바로 기록되며 pgrowlocks ex
 ## 5\. 2단계 트랜잭션 (Two-Phase Transactions)
 
 PostgreSQL은 two-phase commit (2PC) 프로토콜을 지원한다. 다수의 분산 시스템 환경에서 모든 데이터베이스가 정상적으로 수정되었음을 보장하는 두 단계 커밋 프로토콜로 분산 트랜잭션에 참여한 모든 데이터베이스가 모두 함께 커밋되거나 롤백되는 것을 보장한다.
-
-(해당 내용은 PREPARE 구문의 상세 내용과 함께 다음 포스트에서 정리할 예정)
+상세 내용은 다음 포스트에서 확인가능
+[[PostgreSQL] 2단계 커밋 프로토콜(Two-Phase Commit Protocol), Prepare transaction](https://github.com/junhkang/postgresql/blob/main/2%EB%8B%A8%EA%B3%84%20%EC%BB%A4%EB%B0%8B%20%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C(Two-Phase%20Commit%20Protocol)%2C%20Prepare%20transaction.md)
 
 참고
 
