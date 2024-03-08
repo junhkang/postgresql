@@ -1,6 +1,6 @@
 ## 1\. 인덱스(INDEX) 상세 개념
 
-[[Postgresql\] - 인덱스(INDEX)개념 및 생성, 삭제, 분석, 설계 방법](https://github.com/junhkang/postgresql/blob/main/%EC%9D%B8%EB%8D%B1%EC%8A%A4(INDEX)%EA%B0%9C%EB%85%90%20%EB%B0%8F%20%EC%83%9D%EC%84%B1%2C%20%EC%82%AD%EC%A0%9C%2C%20%EB%B6%84%EC%84%9D%2C%20%EC%84%A4%EA%B3%84%20%EB%B0%A9%EB%B2%95.md)
+[\[Postgresql\] - 인덱스(INDEX)개념 및 생성, 삭제, 분석, 설계 방법](https://github.com/junhkang/postgresql/blob/main/%EC%9D%B8%EB%8D%B1%EC%8A%A4(INDEX)%EA%B0%9C%EB%85%90%20%EB%B0%8F%20%EC%83%9D%EC%84%B1%2C%20%EC%82%AD%EC%A0%9C%2C%20%EB%B6%84%EC%84%9D%2C%20%EC%84%A4%EA%B3%84%20%EB%B0%A9%EB%B2%95.md)
 
 
 ## 2\. 미사용 인덱스
