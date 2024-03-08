@@ -4,15 +4,11 @@
 
 제약조건에는 여러 가지 종류가 있으며 DMBS에 마다 다양하지만, 이번 포스트는 PostgreSQL의 5가지 제약 조건들을 설명하겠다.
 
-1\. [Primary Keys(PK)](#scrollPk)
-
-2\. [Foreign Keys(FK)](#scrollFk)
-
-3\. [Check](#scrollCheck)
-
-4\. [Not-null](#scrollNotNull)
-
-5\. [Unique](#scrollUnique)
+1\. Primary Keys(PK)
+2\. Foreign Keys(FK)
+3\. Check
+4\. Not-null
+5\. Unique
 
 ## 1\. Primary Keys (PK)
 
