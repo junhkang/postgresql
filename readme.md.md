@@ -1,11 +1,12 @@
-# 📄 소개
+# ⚡ PostgreSQL 기본 개념 및 성능 개선 노하우
+## 📄 소개
 PostgreSQL의 기본 개념과 함께 운영환경에서 데이터베이스 관리 및 성능 향상 경험을 공유하기 위한 Repository입니다. [산업의 역군](https://www.sankun.com/)에서 건설 분야의 '빅'데이터를 PostgreSQL 관계형 데이터베이스로 관리하며 얻은 실질적인 노하우와 성능 개선 방법을 기록하였습니다. 스타트업이 마주하는 자원의 한계 속에서도, 효율적인 자원 분배와 체계적인 모니터링을 통해 매일 수만 건의 데이터를 실시간으로 동기화하고, 수천만 건의 데이터를 효과적으로 조회하는 방법을 탐구합니다.
 
 본 자료는 단순히 데이터베이스의 인덱스 설정이나 파티셔닝을 넘어, PostgreSQL의 구조와 원리를 정확히 이해하고 이를 바탕으로 최적화된 데이터베이스 설계 및 운영 전략을 마련하기 위한 것입니다. 이 과정에서 PostgreSQL 공식 문서를 근간으로 삼아, 기본 개념을 명확히 하고, 실제 운영 데이터를 기반으로 한 성능 개선 사례들을 공유하여, 다양한 DB 스펙과 데이터 양에 따른 최적화 방안을 제시하고자 합니다.
 
 이 Repository는 계속해서 업데이트될 예정이며, 더 깊이 있는 정보와 경험을 공유하고자 합니다. 실제 적용 예제들은 [junhkang.tistory.com](http://junhkang.tistory.com/)에서 더욱 상세히 다루고 있으니 참고하시길 바랍니다.
 
-# 📜 목차
+## 📜 목차
 ### 개념
 
 - [2단계 커밋 프로토콜(Two-Phase Commit Protocol), Prepare transaction](https://github.com/junhkang/postgresql/blob/d3ae0de823d09d1bbb23efb15b2b2c6fb94eb3ad/2%EB%8B%A8%EA%B3%84%20%EC%BB%A4%EB%B0%8B%20%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C(Two-Phase%20Commit%20Protocol)%2C%20Prepare%20transaction.md)
