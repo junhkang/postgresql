@@ -54,7 +54,7 @@ select doc from ts where doc_tsv @@ to_tsquery('many & slitter');
 > ▪ 마지막으로, 발견된 TID각각에 대해 검색 쿼리에 부합하는지 확인한다.  
 > (예제의 쿼리의 경우 and 조건이기에 (0,2)에 해당하는 TID만 리턴하게 된다.)
 
-<p align="center"><img src="./img/gin.png"/></p>
+<p align="center"><img src="/img/gin.png"/></p>
 
 ## 3\. 특징
 

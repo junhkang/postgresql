@@ -103,7 +103,7 @@ CREATE SEQUENCE는 일련번호 생성기인 SEQUENCE를 생성한다. 시퀀스
 SELECT * FROM seq_name;
 ```
 
-<p align="center"><img src="./img/seq.png"/></p>
+<p align="center"><img src="/img/seq.png"/></p>
 
 이 테이블을 직접 조작하면 안되며, 결과에서 last\_value (nextval)은 "실행 시점"의 최신 값이다. (그 후로는 다른 세션에서 호출되어 바뀌었을 수도 있는 값이다.)
 

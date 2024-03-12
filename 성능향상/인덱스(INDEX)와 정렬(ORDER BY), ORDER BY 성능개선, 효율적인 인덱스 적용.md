@@ -73,7 +73,7 @@ SELECT * FROM ORDER_BY_INDEX_TEST ORDER BY ID ASC NULLS LAST LIMIT 1000;
 SELECT * FROM ORDER_BY_INDEX_TEST ORDER BY ID DESC NULLS FIRST LIMIT 1000;
 ```
 
-<p align="center"><img src="./img/orderbyindex.png"/></p>
+<p align="center"><img src="/img/orderbyindex.png"/></p>
 
 하지만 반대 정렬의(**ASC NULLST FIRST, DESC NULLS LAST**) 경우 인덱스의 효과를 볼 수 없다.
 
@@ -82,7 +82,7 @@ SELECT * FROM ORDER_BY_INDEX_TEST ORDER BY ID ASC NULLS FIRST LIMIT 1000;
 SELECT * FROM ORDER_BY_INDEX_TEST ORDER BY ID DESC NULLS LAST LIMIT 1000;
 ```
 
-<p align="center"><img src="./img/orderbyindex2.png"/></p>
+<p align="center"><img src="/img/orderbyindex2.png"/></p>
 
 ### 3-2. NOT NULL 속성 칼럼에 기본 인덱스 부여
 
@@ -99,7 +99,7 @@ SELECT * FROM ORDER_BY_INDEX_TEST ORDER BY NOT_NULL_VARCHAR ASC NULLS LAST LIMIT
 SELECT * FROM ORDER_BY_INDEX_TEST ORDER BY NOT_NULL_VARCHAR DESC NULLS FIRST LIMIT 1000;
 ```
 
-<p align="center"><img src="./img/orderbyindex3.png"/></p>
+<p align="center"><img src="/img/orderbyindex3.png"/></p>
 
 반대 정렬은 여전히 인덱스의 효과를 볼 수 없다.
 
@@ -108,7 +108,7 @@ SELECT * FROM ORDER_BY_INDEX_TEST ORDER BY NOT_NULL_VARCHAR ASC NULLS FIRST LIMI
 SELECT * FROM ORDER_BY_INDEX_TEST ORDER BY NOT_NULL_VARCHAR DESC NULLS LAST LIMIT 1000;
 ```
 
-<p align="center"><img src="./img/orderbyindex4.png"/></p>
+<p align="center"><img src="/img/orderbyindex4.png"/></p>
 
 \-> 칼럼 자체에 NULL 데이터가 없어서 NULLS FIRST, NULLS LAST의 결과가 같더라도, 인덱스 테이블은 별도로 생성되며 반대로 정렬 시 인덱스의 효과를 볼 수 없다.
 
@@ -127,7 +127,7 @@ SELECT * FROM ORDER_BY_INDEX_TEST ORDER BY NOT_NULL_VARCHAR ASC NULLS FIRST LIMI
 SELECT * FROM ORDER_BY_INDEX_TEST ORDER BY NOT_NULL_VARCHAR DESC NULLS LAST LIMIT 1000;
 ```
 
-<p align="center"><img src="./img/orderbyindex5.png"/></p>
+<p align="center"><img src="/img/orderbyindex5.png"/></p>
 
 역방향은 인덱스 효과를 볼 수 있고,
 
@@ -136,7 +136,7 @@ SELECT * FROM ORDER_BY_INDEX_TEST ORDER BY NOT_NULL_VARCHAR ASC NULLS LAST LIMIT
 SELECT * FROM ORDER_BY_INDEX_TEST ORDER BY NOT_NULL_VARCHAR DESC NULLS FIRST LIMIT 1000;
 ```
 
-<p align="center"><img src="./img/orderbyindex6.png"/></p>
+<p align="center"><img src="/img/orderbyindex6.png"/></p>
 
 기존 정방향도 인덱스 효과를 볼 수 있다.
 
@@ -159,7 +159,7 @@ SELECT * FROM ORDER_BY_INDEX_TEST WHERE NULL_VARCHAR IS NOT NULL ORDER BY NULL_V
 SELECT * FROM ORDER_BY_INDEX_TEST WHERE NULL_VARCHAR IS NOT NULL ORDER BY NULL_VARCHAR DESC NULLS LAST LIMIT 1000;
 ```
 
-<p align="center"><img src="./img/orderbyindex7.png"/></p>
+<p align="center"><img src="/img/orderbyindex7.png"/></p>
 
 역방향은 NOT NULL 여부에 상관없이 역방향 인덱스의 효과를 볼 수 없다.
 

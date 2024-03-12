@@ -1,4 +1,4 @@
-<p align="center"><img src="./img/role.jpeg"/></p>
+<p align="center"><img src="/img/role.jpeg"/></p>
 
 ## 1\. ROLE
 

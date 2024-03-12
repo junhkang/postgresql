@@ -51,13 +51,13 @@ FROM locations
 WHERE ST_DWithin(ST_MakePoint(:longitude, :latitude), ST_MakePoint(longitude, latitude), :distance);
 ```
 
-<p align="center"><img src="./img/spgist.png"/></p>
+<p align="center"><img src="/img/spgist.png"/></p>
 
 지도의4분 할로 지속적으로 나눈다. 각각의 사각형이 index page 역할을 한다
 
 나눠진 부분을 좀 더 상세히 보면
 
-<p align="center"><img src="./img/spgist2.png"/></p>
+<p align="center"><img src="/img/spgist2.png"/></p>
 
 다음 좌표에서 (2,7) 위에 존재하는 좌표들을 찾고 싶다면 
 
@@ -69,7 +69,7 @@ select * from points where p >^ point '(2,7)'
 
 1 사분면의 중심좌표인 (6,6)으로 다시 비교하여 더 큰 좌표가 존재할 수 있는 영역을 확인한 후 다음과 같은 인덱스 구조를 생성한다.
 
-<p align="center"><img src="./img/spgist3.png"/></p>
+<p align="center"><img src="/img/spgist3.png"/></p>
 
 ## 3\. Built-in Operator Class
 

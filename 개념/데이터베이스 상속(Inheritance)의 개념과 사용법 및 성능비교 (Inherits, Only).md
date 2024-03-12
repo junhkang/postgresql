@@ -105,11 +105,11 @@ SELECT, UPDATE, DELETE 모두 ONLY 구문을 지원한다.
 
 **a. Union (table\_a, table\_b)**
 
-<p align="center"><img src="./img/inherit.png"/></p>
+<p align="center"><img src="/img/inherit.png"/></p>
 
 **b. inherit 테이블 (table\_parent, table\_child1)**
 
-<p align="center"><img src="./img/inherit2.png"/></p>
+<p align="center"><img src="/img/inherit2.png"/></p>
 
 기존 Union은 각 테이블에 seq\_scan 후 정렬하고 상속 테이블은 부모, 자식 각 테이블 seq\_scan 후 바로 완료한다.
 
@@ -117,8 +117,8 @@ SELECT, UPDATE, DELETE 모두 ONLY 구문을 지원한다.
 
 ### 5-2. 조건을 넣고 조회 시
 
-<p align="center"><img src="./img/inherit3.png"/></p>
-<p align="center"><img src="./img/inherit4.png"/></p>
+<p align="center"><img src="/img/inherit3.png"/></p>
+<p align="center"><img src="/img/inherit4.png"/></p>
 
 둘 다 인덱스가 적용/미적용된 상태의 검색을 할 경우, 2개의 테이블을 각각 조회하는 코스트가 소모되며 현재 테스트 데이터에는 중복되는 값들이 극소량이라 차이가 미비하지만, 중복되는 값이 많거나 정렬이 고려되어야 하는 쿼리를 사용 시 상속 테이블 사용 시의 성능이 더 나을 것으로 보인다.
 

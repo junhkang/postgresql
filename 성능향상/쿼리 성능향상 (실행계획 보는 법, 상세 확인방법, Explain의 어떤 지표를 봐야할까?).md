@@ -25,7 +25,7 @@ EXPLAIN을 통한 실행 계획 확인은 PostgreSQL PLANNER가 만든 쿼리 �
 EXPLAIN ANALYZE SELECT * from TEST_EXPLAIN;
 ```
 
-<p align="center"><img src="./img/explain.png"/></p>
+<p align="center"><img src="/img/explain.png"/></p>
 
 테스트 테이블의 100만개의 행을 조건 없이 조회했을 때의 플랜 조회이다.
 
@@ -45,8 +45,8 @@ SELECT relpages FROM pg_class WHERE relname = 'test_explain';
 SELECT COUNT(*) FROM test_explain;
 ```
 
-<p align="center"><img src="./img/explain2.png"/></p>
-<p align="center"><img src="./img/explain3.png"/></p>
+<p align="center"><img src="/img/explain2.png"/></p>
+<p align="center"><img src="/img/explain3.png"/></p>
 
 이 수치에서 14,213개의 PAGE를 로드하는 COST와 1,000,000개 ROW를 연산하는 COST를 계산하면 된다.
 
@@ -72,7 +72,7 @@ FROM pg_stats
 WHERE tablename = 'test_explain';
 ```
 
-<p align="center"><img src="./img/explain4.png"/></p>
+<p align="center"><img src="/img/explain4.png"/></p>
 
 4+10+13+6+8은 통계값에서 확인한 41과 일치한다.
 
@@ -121,7 +121,7 @@ join test_explain_detail TED
 on TE.name = TED.name
 ```
 
-<p align="center"><img src="./img/explain5.png"/></p>
+<p align="center"><img src="/img/explain5.png"/></p>
 
 -   실행계획 추가정보를 보여준다. 단계별 모든 컬럼 목록을 보여준다
 -   테이블, 함수에는 해당 스키마 명을 보여준다.
@@ -138,7 +138,7 @@ join test_explain_detail TED
 on TE.name = TED.name;
 ```
 
-<p align="center"><img src="./img/explain6.png"/></p>
+<p align="center"><img src="/img/explain6.png"/></p>
 
 버퍼 사용량을 보여준다. 특히 공유 BLOCK, 로컬 BLOCK, 임시 BLOCK의 HIT, 읽기, 쓰기, 변경 내용을 포함한다.
 
@@ -159,7 +159,7 @@ join test_explain_detail TED
 on TE.name = TED.name;
 ```
 
-<p align="center"><img src="./img/explain7.png"/></p>
+<p align="center"><img src="/img/explain7.png"/></p>
 
 -   실제 각 노드별 소모 시간을 보여준다.
 -   반복적으로 시스템 시간을 확인하는데서 오는 부하는 쿼리의 성능을 굉장히 저하시킬 수 있기 때문에 정확한 시간이 필요한 것이 아니라면 FALSE로 두는 것이 좋다.
@@ -176,7 +176,7 @@ join test_explain_detail TED
 on TE.name = TED.name
 ```
 
-<p align="center"><img src="./img/explain8.png"/></p>
+<p align="center"><img src="/img/explain8.png"/></p>
 
 -   실행계획 값을 TEXT, XML, JSON, YAML의 형식으로 출력한다. 
 -   초기값은 TEXT이다.

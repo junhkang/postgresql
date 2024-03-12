@@ -10,7 +10,7 @@
 
 ## 2\. Hash 인덱스 구조
 
-<p align="center"><img src="./img/hashindex.png"/></p>
+<p align="center"><img src="/img/hashindex.png"/></p>
 
 -   **Meta page** - Root, 첫 번째 page, 인덱스 정보 포함
 -   **Bucket pages** - 인덱스의 메인 page, "hash code - TID" 쌍으로 데이터를 저장

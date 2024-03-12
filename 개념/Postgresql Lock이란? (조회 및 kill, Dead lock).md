@@ -33,7 +33,7 @@ Lock 리스트에서 조회된 PID를 넣고 cancel, 혹은 terminate 시켜주�
 > \- 특정 락은 self-conflicting 될 수 있다.  
 > (ex. access exclusive 락은 중첩불가 access share 락은 여러 트랜잭션에서 다중으로 적용될 수 있다.)
 
-<p align="center"><img src="./img/lock.png"/></p>
+<p align="center"><img src="/img/lock.png"/></p>
 
 ### **3-2. Row 단위 Lock**
 
@@ -42,7 +42,7 @@ Lock 리스트에서 조회된 PID를 넣고 cancel, 혹은 terminate 시켜주�
 > \- Row Lock은 해당 트랜잭션의 종료 시에 풀리거나, save point rollback 시점에 풀린다. (테이블 락과 동일)  
 > \- 주로 for update 구문을 사용하여 select 동안 데이터의 무결성을 보장하기 위해 사용한다.
 
-<p align="center"><img src="./img/lock2.png"/></p>
+<p align="center"><img src="/img/lock2.png"/></p>
 
 ### **3-3. Page 단위 Lock**
 

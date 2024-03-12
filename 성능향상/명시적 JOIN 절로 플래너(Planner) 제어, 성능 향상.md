@@ -144,7 +144,7 @@ select a.*
 and b.id  = c.id;
 ```
 
-<p align="center"><img src="./img/imp.png"/></p>
+<p align="center"><img src="/img/imp.png"/></p>
 
 \-> a와 b 테이블을 먼저 조인한 후 c 테이블 조인
 
@@ -157,7 +157,7 @@ select *
          where a.id = c.id offset 0) as foo;
 ```
 
-<p align="center"><img src="./img/imp2.png"/></p>
+<p align="center"><img src="/img/imp2.png"/></p>
 
 \-> a와 c 테이블을 먼저 조인한 후 b 테이블 조인
 

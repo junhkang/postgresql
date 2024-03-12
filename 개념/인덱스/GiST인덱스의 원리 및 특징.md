@@ -14,7 +14,7 @@ WHERE ST_DWithin(ST_MakePoint(:longitude, :latitude), ST_MakePoint(longitude, la
 
 ### ▪ 1-1. 지도(좌표)형태의 데이터 인덱싱
 
-<p align="center"><img src="./img/gist.png"/></p>
+<p align="center"><img src="/img/gist.png"/></p>
 
 지도, 좌표 형태의 데이터에 유용하며 지도의 특정 분포지점을 사각형으로 계속해서 분할한다. 각각의 사각형이 index page 역할을 한다.
 
@@ -22,11 +22,11 @@ ROOT page 는 몇몇 최대로 큰 사각형을 보유하고 있으며, child no
 
 좀 더 자세히 들여다보자
 
-<p align="center"><img src="./img/gist2.png"/></p>
+<p align="center"><img src="/img/gist2.png"/></p>
 
 다음 좌표를 보면 (2,1)-(7,4) 사각형은 (1-1)-(6,3)과 겹치지만 (5-5), (8-8) 사각형과는 겹치지 않는다, 그렇기 때문에 
 
-<p align="center"><img src="./img/gist3.png"/></p>
+<p align="center"><img src="/img/gist3.png"/></p>
 
 다음과 같은 방법으로 하위 leaf를 결정하게된다.
 

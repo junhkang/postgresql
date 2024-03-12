@@ -14,7 +14,7 @@ GIN stands for "Generalized Inverted index". "Inverted" refers to the way that t
 
 인덱스를 적용하는 column의 값을 일정한 규칙에 따라 split 후 사용한다. 데이터 내의 각 token들을 indexing하여 등장 위치와 상관없이 해당 찾고자 하는 값이 데이터의 중간에 등장하더라도 인덱스가 가능하다.
 
-<p align="center"><img src="./img/ginindex.png"/></p>
+<p align="center"><img src="/img/ginindex.png"/></p>
 
 ##### 이미지 출처: [https://pganalyze.com/blog/gin-index](https://pganalyze.com/blog/gin-index)
 
@@ -173,9 +173,9 @@ ORDER BY rank DESC
 
 -   full text search를 사용시 like문의 결합으로 텍스트를 검색할 시보다 효율 높음  
     a. full Text Search(gin index) 사용시  
-    <p align="center"><img src="./img/ginindex2.png"/></p>
+    <p align="center"><img src="/img/ginindex2.png"/></p>
     b. 기본 like절 사용시  
-    <p align="center"><img src="./img/ginindex3.png"/></p>
+    <p align="center"><img src="/img/ginindex3.png"/></p>
     150만건 데이터 기준 실행시간 9초 -> 1초 향상.  
     데이터 수량이 더 많을 경우 향상될 것으로 보임
 -   정교한 유사단어 검색 가능  

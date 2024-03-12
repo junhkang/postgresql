@@ -13,7 +13,7 @@ PostgreSQL에는 6가지의 인덱스 종류가 있다. 각각의 인덱스는 �
 
 ### ▪ 2-1. B-tree 인덱스의 자료구조 형태
 
-<p align="center"><img src="./img/btree.png"/></p>
+<p align="center"><img src="/img/btree.png"/></p>
 
 최상위 Root를 Meta page, 최하위 노드를 Leaf page라고 한다.) Root page에서 leaf page들 간의 내부 page 수가 항상 같기에, 어떤 value를 검색하여도 동일한 시간이 걸린다. 데이터는 non-decreasing order로 정렬되어 있고, 동일 레벨의 page들끼리는 양방향으로 연결되어 있기에 (ex. 그림의 25 <->32) 순차적 데이터를 root를 확인할 필요 없이 한 번에 찾을 수 있다.
 
@@ -25,13 +25,13 @@ PostgreSQL에는 6가지의 인덱스 종류가 있다. 각각의 인덱스는 �
 
 ### ▪ 2-3. 불일치에 해당하는 데이터를 찾기 위해 데이터를 탐색하는 순서 ("_indexed-field_ ≤ _expression_" (or "_indexed-field_ ≥ _expression_")),
 
-<p align="center"><img src="./img/btree3.png"/></p>
+<p align="center"><img src="/img/btree3.png"/></p>
 
 다음의 경우, 먼저 일치하는 leaf page 를 찾은 후 leaf page 간의 이동으로 조회한다.
 
 ### ▪ 2-4. 범위로 조회할 경우 데이터를 탐색하는 순서 ("_indexed-field_ ≤ _expression_" and "_indexed-field_ ≥ _expression_"),
 
-<p align="center"><img src="./img/btree4.png"/></p>
+<p align="center"><img src="/img/btree4.png"/></p>
 
 A< indexed-field < B 일경우 A에 해당하는 leaf page를 찾은 후 B의 조건에 맞는 범주 내의 데이터까지 leaf page 간의 이동으로 조회한다. 혹은 반대 방향으로, B부터 조회 후 A 조건에 맞는 데이터 범주까지 leaf page 간 이동하여 조회한다.
 
