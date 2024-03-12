@@ -11,7 +11,7 @@
 
 기본 개념에서 확인했듯이 트랜잭션은 명시적으로 실행(BEGIN, START TRANSACTION), 종료 (COMMIT, ROLLBACK) 할 수 있다. 명시적 트랜잭션 외의 SQL 구문들은 단일 트랜잭션이 자동으로 적용된다. 그렇다면 각각의 트랜잭션이 어떻게 구분되는지 먼저 살펴보자.
 
-<p align="center"><img src="./img/tx.png"/></p>
+<p align="center"><img src="../img/tx.png"/></p>
 
 ### 2-1. Virtual Transaction Id
 
@@ -55,7 +55,7 @@ SELECT LOCKTYPE, VIRTUALXID, TRANSACTIONID FROM PG_LOCKS;
 두 칼럼 모두 read/write 트랜잭션에 존재하지만 Read-only 트랜잭션에는 virtualxid는 있으나 transactionId는 null이다. 
 
 <p align="center"><img src="../img/tx2.png"/></p>
-<p align="center"><img src="./img/tx.png"/></p>
+<p align="center"><img src="../img/tx.png"/></p>
 
 Row-level의 read/write locks는 잠긴 row에 바로 기록되며 pgrowlocks extension을 통해 확인 가능하다.
 
