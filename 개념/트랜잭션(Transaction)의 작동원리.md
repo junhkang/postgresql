@@ -54,7 +54,7 @@ SELECT LOCKTYPE, VIRTUALXID, TRANSACTIONID FROM PG_LOCKS;
 
 두 칼럼 모두 read/write 트랜잭션에 존재하지만 Read-only 트랜잭션에는 virtualxid는 있으나 transactionId는 null이다. 
 
-<p align="center"><img src="./img/tx2.png"/></p>
+<p align="center"><img src="../img/tx2.png"/></p>
 <p align="center"><img src="./img/tx.png"/></p>
 
 Row-level의 read/write locks는 잠긴 row에 바로 기록되며 pgrowlocks extension을 통해 확인 가능하다.
