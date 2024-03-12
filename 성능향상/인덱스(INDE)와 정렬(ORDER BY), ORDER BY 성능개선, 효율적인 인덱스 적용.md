@@ -83,6 +83,7 @@ SELECT * FROM ORDER_BY_INDEX_TEST ORDER BY ID DESC NULLS LAST LIMIT 1000;
 ```
 
 <p align="center"><img src="./img/orderbyindex2.png"/></p>
+
 ### 3-2. NOT NULL 속성 칼럼에 기본 인덱스 부여
 
 NOT NULL 인 칼럼에 기본 인덱스를 부여할 경우 **ORDER BY id ASC NULLS LAST, ORDER BY id DESC NULLS FIRST** (동일 순서가 없다면 결과는 같다.)의 효과를 동시에 볼 수 있을까?
