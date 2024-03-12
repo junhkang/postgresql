@@ -19,7 +19,7 @@ PostgreSQL에는 6가지의 인덱스 종류가 있다. 각각의 인덱스는 �
 
 ### ▪ 2-2. 정확히 일치하는 데이터를 찾기 위해 데이터를 탐색하는 순서 ("_indexed-field_ = _expression")_
 
-<p align="center"><img src="../img/btree2.png"/></p>
+<p align="center"><img src="/junhkang/postgresql/tree/main/img/btree2.png"/></p>
 
 인덱스 컬럼에 동일 데이터가 너무 많이 분포되어있어 한 page에 넘치게 데이터가 들어있을 수 있기에, 내부 페이지에서 정확히 일치하는 page를 찾게 되면 왼쪽으로 한 page를 이동하여 left to right 방향으로 인덱스를 조회한다.
 
