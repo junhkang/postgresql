@@ -59,11 +59,11 @@ Postgresql은 seq scan, index scan, bitmap index scan, index only scan, tid scan
 
 ### 2-2. 인덱스가 적용되지 않는 경우
 
-▪  order by {인덱스칼럼 1}, {칼럼 2} : 복수 키에 대해 order by 하는 경우  (order by col1, col2 자체를 인덱스 설정하면 적용가능)  
-▪   where {칼럼 1} = ‘x’ order by {인덱스칼럼 2} : 조건절에 의하여 연속적이지 않게 된 컬럼에 대한 order by  
-▪   order by {인덱스컬럼1} desc, {인덱스컬럼2} asc : desc와 asc의 결합사용  
-▪   group by {인덱스컬럼1} order by {인덱스컬럼2} : group by, order by 컬럼이 서로 다른 경우  
-▪   order by abs({인덱스컬럼1}) : 형 변환 이후의 order by, group by 인 경우
+▪  **order by {인덱스칼럼 1}, {칼럼 2} :** 복수 키에 대해 order by 하는 경우  (order by col1, col2 자체를 인덱스 설정하면 적용가능)  
+▪   **where {칼럼 1} = ‘x’ order by {인덱스칼럼 2} :** 조건절에 의하여 연속적이지 않게 된 컬럼에 대한 order by  
+▪   **order by {인덱스컬럼1} desc, {인덱스컬럼2} asc :** desc와 asc의 결합사용  
+▪   **group by {인덱스컬럼1} order by {인덱스컬럼2} :** group by, order by 컬럼이 서로 다른 경우  
+▪   **order by abs({인덱스컬럼1}) :** 형 변환 이후의 order by, group by 인 경우
 
 ### 2-3. 인덱스 설계 방법
 
@@ -89,13 +89,10 @@ Postgresql은 seq scan, index scan, bitmap index scan, index only scan, tid scan
 #### 2-4-1. 다중 컬럼 인덱스 설계 방법
 
 ▪  다중 컬럼 인덱스 구성시 컬럼의 순서는, IO를 적게 발생시키는 순으로 구성하여야 한다.
-
 (선행 인덱스에서 더 많은 데이터가 필터링될수록 이후 인덱스의 I/O가 덜 소모된다.)
 
 ▪  인덱스 컬럼을 합쳐 색인하기에 선행 인덱스 컬럼이 조건에 있어야 한다.
-
 예를 들어
-
 ```
 CREATE INDEX idx_user_sample ON user USING btree(first_name, address );
 ```
