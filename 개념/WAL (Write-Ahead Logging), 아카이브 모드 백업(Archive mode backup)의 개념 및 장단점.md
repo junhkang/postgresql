@@ -36,6 +36,12 @@ archive\_mode를 선택하면 완료된 WAL 세그먼트가 아카이브 저장�
 
 완료된 WAL 파일 세그먼트를 아카이빙 할 때 실행하는 쉘 명령어
 
+
+
+
+
+참고
+
 [https://www.postgresql.org/docs/16/wal-intro.html](https://www.postgresql.org/docs/16/wal-intro.html)
 
 [https://postgresql.kr/docs/13/continuous-archiving.html#BACKUP-PITR-RECOVERY](https://postgresql.kr/docs/13/continuous-archiving.html#BACKUP-PITR-RECOVERY)
