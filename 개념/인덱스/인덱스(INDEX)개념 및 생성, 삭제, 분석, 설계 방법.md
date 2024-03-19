@@ -27,7 +27,6 @@ DROP INDEX {인덱스명};
 ```
 SELECT schemaname, relname, indexrelname, idx_scan as idx_scan_cnt FROM pg_stat_user_indexes ORDER BY idx_scan;
 ```
-
 ### 1-5. 인덱스 손상 시 재인덱싱
 
 ```
@@ -56,7 +55,7 @@ Postgresql은 seq scan, index scan, bitmap index scan, index only scan, tid scan
 > \- Index Scan은 인덱스 Leaf 블록에 저장된 키를 이용해서 테이블 레코드를 액세스 하는 방식이다.  
 > \- 레코드 정렬 상태에 따라서 테이블 블록 액세스 횟수가 크게 차이 난다.
 
-다음과 같이, 인덱스를 사용할 경우 테이블 레코드에 효과적인 접근이 가능하다. 하지만 select 성능은 올라가지만, update, insert, delete시 index 색인정보 갱신을 하기에 시간이 더 소모된다.
+다음과 같이, 인덱스를 사용할 경우 테이블 레코드에 효과적인 접근이 가능하다. 하지만 **select** 성능은 올라가지만, **update, insert, delete**시 index 색인정보 갱신을 하기에 시간이 더 소모된다.
 
 ### 2-2. 인덱스가 적용되지 않는 경우
 
