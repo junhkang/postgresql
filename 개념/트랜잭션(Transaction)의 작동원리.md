@@ -14,7 +14,7 @@
 
 ### 2-1. Virtual Transaction Id
 
-모든 트랜잭션은 유니크한 **Virtual Transaction Id(virtualXID, vxid)**로 식별된다. 이 **Virtual Transaction Id**는 **Backend ID**와 각 백앤드에 순차적으로 부여된 로컬 아이디 (**LocalXID**)로 구성되어 있다. 캡처의 virtualxid를 확인해 보면 다음과 같다.
+모든 트랜잭션은 유니크한 **Virtual Transaction Id(virtualXID, vxid)**로 식별된다. 이 **Virtual Transaction Id**는 **Backend ID**와 각 백앤드에 순차적으로 부여된 로컬 아이디 (**LocalXID**)로 구성되어 있다. 캡처의 **virtualxid**를 확인해 보면 다음과 같다.
 
 -   Virtual Transaction ID = 115/10798
 -   Backend Id = 115
