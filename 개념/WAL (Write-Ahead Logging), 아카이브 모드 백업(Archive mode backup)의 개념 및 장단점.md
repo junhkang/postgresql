@@ -30,7 +30,7 @@ WAL 레코드 정보의 양을 결정한다. 디폴트 값은 minimal이다.
 
 #### 4-2. archive\_mode (Boolean)
 
-archive\_mode를 선택하면 완료된 WAL 세그먼트가 아카이브 저장소에 저장 (wal\_level이 minimum인 경우 사용 불가)
+**archive_mode**를 선택하면 완료된 WAL 세그먼트가 아카이브 저장소에 저장 (wal_level이 minimum인 경우 사용 불가)
 
 #### 4-3. archive\_command (String)
 
