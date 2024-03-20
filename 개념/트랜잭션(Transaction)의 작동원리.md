@@ -4,8 +4,7 @@
 
 [[PostgreSQL] 트랜잭션(Transaction)의 개념 및 사용](https://github.com/junhkang/postgresql/blob/main/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98(Transaction)%EC%9D%98%20%EA%B0%9C%EB%85%90%20%EB%B0%8F%20%EC%82%AC%EC%9A%A9.md)
 
-
-기본적으로 트랜잭션이 어떤 것인지, COMMIT, ROLLBACK도 익숙하게 사용하고 있다면, PostgreSQL 내부의 트랜잭션이 어떤 구조로 작동하며 세부 단계를 어떻게 확인 가능한지 자세히 알아보자.
+기본적으로 트랜잭션이 어떤 것인지, COMMIT, ROLLBACK도 익숙하게 사용하고 있다면, PostgreSQL 내부의 트랜잭션이 어떤 구조로 작동하며 세부 단계를 각각 어떻게 확인 가능한지 자세히 알아보자.
 
 ## 2\. 트랜잭션과 식별자 (Transactions and Identifiers)
 
