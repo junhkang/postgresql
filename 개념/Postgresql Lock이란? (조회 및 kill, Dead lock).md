@@ -1,4 +1,4 @@
-## 1\. Lock 확인방법
+## 1\. Lock 확인 방법
 
 ```
 SELECT PSAT.RELNAME,
