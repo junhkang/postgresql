@@ -142,3 +142,7 @@ TOAST포인터는 디스크상에 없는 현재 프로세스상의 데이터를 
 참고
 
 [https://www.postgresql.org/docs/16/storage-toast.html#STORAGE-TOAST-INMEMORY](https://www.postgresql.org/docs/16/storage-toast.html#STORAGE-TOAST-INMEMORY)
+
+블로그
+
+https://junhkang.tistory.com/75
