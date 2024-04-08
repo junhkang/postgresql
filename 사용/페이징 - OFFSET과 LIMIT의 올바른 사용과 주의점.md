@@ -18,7 +18,7 @@ ORDER BY ID
 LIMIT 10 OFFSET 20
 ```
 
-<p align="center"><img src="/img/limit.png"/></p>
+<p align="center"><img src="/img/limit1.png"/></p>
 
 -   LIMIT을 지정하면 해당 값만큼의 결과만 출력되며 총 결과 값이 더 적을 경우 있는 만큼만 출력한다.
 -   LIMIT ALL, LIMIT NULL은 LIMIT을 설정하지 않은 것 (전체 ROWS 리턴)과 동일하다.
