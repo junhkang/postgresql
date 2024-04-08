@@ -16,7 +16,7 @@ query2의 결과를 query1에 이어 붙인다. 그냥 사용할 경우 중복�
 
 ### 2-1. UNION 단일 사용
 
-1~5 번째 ROWS, 4~8번째 ROWS를 합친 후 중복 제거한 결과를 보면 다음과 같다.
+1-5 번째 ROWS, 4-8번째 ROWS를 합친 후 중복 제거한 결과를 보면 다음과 같다.
 
 ```
 (SELECT * FROM TEST_EXPLAIN ORDER BY ID LIMIT 5)
@@ -29,7 +29,7 @@ ORDER BY ID;
 
 ### 2-2. UNION ALL
 
-1~5 번째 ROWS, 4~8번째 ROWS를 합친 결과를 보면 다음과 같다. (1000004, 1000005 중복 출력)
+1-5 번째 ROWS, 4-8번째 ROWS를 합친 결과를 보면 다음과 같다. (1000004, 1000005 중복 출력)
 
 ```
 (SELECT * FROM TEST_EXPLAIN ORDER BY ID LIMIT 5)
@@ -46,7 +46,7 @@ query1과 query2에 동시에 존재하는 ROWS를 반환한다. INTERSECT ALL�
 
 ### 3-1. INTERSECT 단일 사용
 
-1~5 번째 ROWS X 2, 4~8번째 ROWS X 2중 교차되는 ROWS만 중복 제거한 후 출력(1000004, 1000005가 중복 제거된 후 출력)
+1-5 번째 ROWS X 2, 4-8번째 ROWS X 2중 교차되는 ROWS만 중복 제거한 후 출력(1000004, 1000005가 중복 제거된 후 출력)
 
 ```
 ((SELECT * FROM TEST_EXPLAIN ORDER BY ID LIMIT 5)
@@ -63,7 +63,7 @@ ORDER BY ID;
 
 ### 3-2. INTERSECT ALL
 
-1~5 번째 ROWS X 2, 4~8번째 ROWS X 2중 교차되는 ROWS만 중복을 포함하여 출력(1000004, 1000005가 두 번씩 중복 출력)
+1-5 번째 ROWS X 2, 4-8번째 ROWS X 2중 교차되는 ROWS만 중복을 포함하여 출력(1000004, 1000005가 두 번씩 중복 출력)
 
 ```
 ((SELECT * FROM TEST_EXPLAIN ORDER BY ID LIMIT 5)
