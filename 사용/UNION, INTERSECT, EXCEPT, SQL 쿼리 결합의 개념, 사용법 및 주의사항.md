@@ -40,7 +40,7 @@ ORDER BY ID;
 
 <p align="center"><img src="/img/union2.png"/></p>
 
-## 3\. INSERSET
+## 3\. INTERSECT
 
 query1과 query2에 동시에 존재하는 ROWS를 반환한다. INTERSECT ALL을 사용하면 중복을 제거해 준다. 예제에선 동일 값을 중복생성하기 위해 UNION과 결합해서 사용하였다.
 
