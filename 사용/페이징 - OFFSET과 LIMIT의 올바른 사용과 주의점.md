@@ -59,3 +59,11 @@ LIMIT 10 OFFSET 30;
 각각 31~40, 41~50번째 ROWS를 추출하였으나 동일한 값도 포함되어 있고, 순서도 명확하지 않다. 따라서 LIMIT / OFFSET을 통해 부분 데이터를 추출할 경우, 단순히 ORDER BY를 하는 것이 아닌, 유니크한 순서 정렬이 될 수 있도록 정렬해 주어야 한다.
 
 또한 OFFSET으로 생략된 앞부분은 서버 내부에서 계산이 되어야 하기 때문에, 아주 큰 OFFSET을 설정하는 것은 효율적이지 못할 수 있다.
+
+
+
+참고
+https://www.postgresql.org/docs/16/queries-limit.html
+
+블로그
+https://junhkang.tistory.com/82
