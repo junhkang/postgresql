@@ -76,7 +76,7 @@ GROUP BY ROLLUP (BRAND, SIZE, COLOR);
 
 <p align="center"><img src="/img/group5.png"/></p>
 
-결과에서 확인할 수 있듯이, (brand, size, color) 뿐 아니라 (brand, size), brand도 GROUPING 대상이 된다. 일반적으로 계층 구조의 데이터 분석에서 많이 사용된다. (전체, 부서, 파트별 총 월급 등을 한 번에 조회할 때)
+결과에서 확인할 수 있듯이, (brand, size, color) 뿐 아니라 (brand, size), brand도 GROUPING 대상이 된다. 일반적으로 계층 구조의 데이터 분석에서 많이 사용된다. (전체, 부서, 파트별 총 월급 등을 한 번에 조회할 때)
 
 ### 1-3. CUBE의 개념 및 사용법
 
@@ -143,7 +143,7 @@ GROUPING SETS (
 
 CUBE, ROLLUP은 GROUP BY 절에 직접 사용되거나, GROUPING SETS 절 내부에 중첩되어서 사용 가능하다. 만약 하나의 GROUPING SETS 절이 다른 절 내에 중첩되는 경우, 내부 절의 모든 요소는 외부 절에 직접 작성된 것과 동일한 결과를 출력한다.
 
-GROUP BY 절에 여러 개의 GROUPING 요소가 있다면, 모든 GROUPING 요소에 대해 가능한 모든 조합이 기준으로 사용되기에 최종 GROUPING SETS 목록은 각 항목의 교차의 곱으로 생성된다.
+GROUP BY 절에 여러 개의 GROUPING 요소가 있다면, 모든 GROUPING 요소에 대해 가능한 모든 조합이 기준으로 사용되기에 최종 GROUPING SETS 목록은 각 항목의 교차의 곱으로 생성된다.
 
 ```
 GROUP BY a, CUBE (b, c), GROUPING SETS ((d), (e))
