@@ -95,3 +95,7 @@ FROM generate_series(1, 1000000);
 <p align="center"><img src="/img/sst5.png"/></p>
 
 성능상 큰 차이가 없음을 확인할 수 있다.
+
+
+블로그
+[https://junhkang.tistory.com/91](https://junhkang.tistory.com/91)
