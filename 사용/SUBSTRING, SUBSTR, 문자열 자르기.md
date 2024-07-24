@@ -20,7 +20,7 @@ SELECT substr('PostgreSQL Tutorial', 1, 10);
 
 <p align="center"><img src="/img/sst1.png"/></p>
 
-## 2\. Substring 뒤에서
+## 2\. Substring 뒤에서
 
 뒤에서부터 (오른쪽에서 부터) 문자열을 추출하려면, 문자열의 길이를 계산한 후, 시작 위치를 해당 길이에서 빼는 방식으로 적용이 가능하다. 
 
