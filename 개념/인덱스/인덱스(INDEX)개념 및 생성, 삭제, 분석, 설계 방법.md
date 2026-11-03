@@ -132,9 +132,9 @@ AND address = ‘Seoul’
 
 결론적으로  다중 컬럼 인덱스의 성능은 절대적인 것이 아닌, 어떤 데이터를 조회하는지, 쿼리를 어떻게 작성하는지에 따라 크게 달라질 수 있기에 확실한 쿼리 플랜 분석 및 설계가 필요하다.
 
--   [\[PostgreSQL\] B-tree 인덱스의 원리 및 특징](https://junhkang.tistory.com/6)
--   [\[PostgreSQL\] Hash 인덱스의 원리 및 특징](https://junhkang.tistory.com/7)
--   [\[PostgreSQL\] GiST인덱스의 원리 및 특징](https://junhkang.tistory.com/8) 
--   [\[PostgreSQL\] SP-GiST인덱스의 원리 및 특징](https://junhkang.tistory.com/9) 
--   [\[PostgreSQL\] GIN인덱스의 원리 및 특징](https://junhkang.tistory.com/10)
--   [\[PostgreSQL\] BRIN 인덱스의 원리 및 특징](https://junhkang.tistory.com/11)
+-   [\[PostgreSQL\] B-tree 인덱스의 원리 및 특징](https://junhkang.com/posts/6/)
+-   [\[PostgreSQL\] Hash 인덱스의 원리 및 특징](https://junhkang.com/posts/7/)
+-   [\[PostgreSQL\] GiST인덱스의 원리 및 특징](https://junhkang.com/posts/8/) 
+-   [\[PostgreSQL\] SP-GiST인덱스의 원리 및 특징](https://junhkang.com/posts/9/) 
+-   [\[PostgreSQL\] GIN인덱스의 원리 및 특징](https://junhkang.com/posts/10/)
+-   [\[PostgreSQL\] BRIN 인덱스의 원리 및 특징](https://junhkang.com/posts/11/)

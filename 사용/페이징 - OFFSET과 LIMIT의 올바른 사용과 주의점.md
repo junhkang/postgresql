@@ -66,4 +66,4 @@ LIMIT 10 OFFSET 30;
 https://www.postgresql.org/docs/16/queries-limit.html
 
 블로그
-https://junhkang.tistory.com/82
+https://junhkang.com/posts/82/

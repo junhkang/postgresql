@@ -37,7 +37,7 @@ A< indexed-field < B 일경우 A에 해당하는 leaf page를 찾은 후 B의 �
 
 ## 3\. B-tree 인덱스의 특징
 
-인덱스 자체의 특징 및 설계방법은 이전 포스트 ([https://junhkang.tistory.com/5](https://junhkang.tistory.com/5 "[PostgreSQL] 인덱스(INDEX)개념 및 생성, 삭제, 분석, 설계 방법")) 에서 다루고 있으니 참고, B-tree 인덱스만의 특징은 다음과 같다.
+인덱스 자체의 특징 및 설계방법은 이전 포스트 ([https://junhkang.com/posts/5/](https://junhkang.com/posts/5/ "[PostgreSQL] 인덱스(INDEX)개념 및 생성, 삭제, 분석, 설계 방법")) 에서 다루고 있으니 참고, B-tree 인덱스만의 특징은 다음과 같다.
 
 > ▪ 데이터가 동일한지, 특정 범주에 있는 데이터인지 여부로 조회할 때 사용  
 > ▪ Postgresql 옵티마이저는 "<   <=   \=   \>=   \>"와 같은 수식을 사용할때 B-tree 인덱스를 고려 (수식의 조합인 IN&& Between도 고려)  

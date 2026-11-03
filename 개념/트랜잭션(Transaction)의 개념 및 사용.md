@@ -17,7 +17,7 @@ COMMIT;
 
 트랜잭션 COMMIT 전에 다른 유저가 동일한 row의 balance를 업데이트하려고 한다면, 그전 트랜잭션이 commit 혹은 rollback 되는 것을 대기해야하며 이를 lock 상태라고 한다. (Lock의 개념 및 상세는 다음 포스트에 상세하게 정리되어 있다.)
 
-[2023.09.11 - \[Postgresql\] - Postgresql Lock이란? (조회 및 kill, Dead lock)](https://junhkang.tistory.com/4)
+[2023.09.11 - \[Postgresql\] - Postgresql Lock이란? (조회 및 kill, Dead lock)](https://junhkang.com/posts/4/)
 
 > PostgreSQL에서는 모든 SQL 구문이 트랜잭션 안에서 실행되며, BEGIN을 명시적으로 실행하지 않아도 SQL 명령어를 실행시키면  BIGIN이 되었다고 간주한다. Postgresql의 툴로 사용하는 PgAdmin, Dbeaver, DataGrip 등의 툴에는 각각 트랜잭션을 Manual or Auto로 설정할 수 있다. Manual의 경우 트랜잭션을 commit, rollback을 명시적으로 선언해주지 않을 경우 트랜잭션이 계속 유지되며, Auto의 경우 명시적으로 선언하지 않아도 SQL이 성공적으로 실행된 후 즉시 commit이 실행된 것으로 간주한다.
 

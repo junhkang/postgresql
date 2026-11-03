@@ -37,7 +37,7 @@ xmin  | xmax  |  value
 
 Vacuum에 대한 상세 개념은 해당 포스트에서 확인할 수 있다.
 
-[2023.10.09 - \[Postgresql\] - \[PostgreSQL\] Vacuum 개념 및 적절한 사용](https://junhkang.tistory.com/17)
+[2023.10.09 - \[Postgresql\] - \[PostgreSQL\] Vacuum 개념 및 적절한 사용](https://junhkang.com/posts/17/)
 
 
 \[참고\]

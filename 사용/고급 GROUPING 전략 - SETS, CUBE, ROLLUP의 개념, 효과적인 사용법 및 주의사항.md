@@ -278,4 +278,4 @@ VALUES
 [https://www.postgresql.org/docs/16/queries-table-expressions.html#QUERIES-GROUPING-SETS](https://www.postgresql.org/docs/16/queries-table-expressions.html#QUERIES-GROUPING-SETS)
 
 블로그
-https://junhkang.tistory.com/84
+https://junhkang.com/posts/84/

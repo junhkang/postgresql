@@ -98,4 +98,4 @@ FROM generate_series(1, 1000000);
 
 
 블로그
-[https://junhkang.tistory.com/91](https://junhkang.tistory.com/91)
+[https://junhkang.com/posts/91/](https://junhkang.com/posts/91/)

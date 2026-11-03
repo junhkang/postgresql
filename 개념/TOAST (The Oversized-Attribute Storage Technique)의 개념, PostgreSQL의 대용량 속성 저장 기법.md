@@ -145,4 +145,4 @@ TOAST포인터는 디스크상에 없는 현재 프로세스상의 데이터를 
 
 블로그
 
-https://junhkang.tistory.com/75
+https://junhkang.com/posts/75/
