@@ -6,6 +6,15 @@ PostgreSQL의 기본 개념과 함께 운영환경에서 데이터베이스 관�
 
 이 Repository는 계속해서 업데이트될 예정이며, 더 깊이 있는 정보와 경험을 공유하고자 합니다. 실제 적용 예제들은 [junhkang.com](https://junhkang.com/categories/postgresql/)에서 더욱 상세히 다루고 있으니 참고하시길 바랍니다.
 
+## 🆕 블로그 최신 글 (실무 심화)
+레포의 정리 내용을 실제 운영 사례로 풀어 쓴 글은 [junhkang.com](https://junhkang.com/)에 먼저 올라옵니다.
+- [배치마다 반복되는 집계는 Materialized View로 빼라](https://junhkang.com/posts/postgresql-materialized-view-batch-aggregate/)
+- [인덱스가 있는데 안 쓰는 진짜 이유](https://junhkang.com/posts/postgresql-planner-3-why-not-index/)
+- [플래너는 통계를 보고 결정한다 — 그 통계는 언제 틀리나](https://junhkang.com/posts/postgresql-planner-1-statistics/)
+- [파티셔닝이 성능을 올리지 않는 경우](https://junhkang.com/posts/postgresql-partition-1-pruning/)
+- [데드락은 어떻게 생기고 어떻게 읽나](https://junhkang.com/posts/postgresql-lock-2-deadlock/)
+- [SKIP LOCKED로 작업 큐 만들기](https://junhkang.com/posts/postgresql-lock-3-skip-locked-queue/)
+
 ## 📜 목차
 ### 개념
 - [TOAST (The Oversized-Attribute Storage Technique)의 개념, PostgreSQL의 대용량 속성 저장 기법](https://github.com/junhkang/postgresql/blob/main/%EA%B0%9C%EB%85%90/TOAST%20(The%20Oversized-Attribute%20Storage%20Technique)%EC%9D%98%20%EA%B0%9C%EB%85%90%2C%20PostgreSQL%EC%9D%98%20%EB%8C%80%EC%9A%A9%EB%9F%89%20%EC%86%8D%EC%84%B1%20%EC%A0%80%EC%9E%A5%20%EA%B8%B0%EB%B2%95.md)
